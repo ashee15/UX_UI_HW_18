@@ -123,13 +123,16 @@ footer li {
     grid-area: content4;
   }
 
-@media (max-width: 600px) {
-    display: flex;
-    flex-direction: column ;
-    width: 100%;
-    }
-  #categoryGrid {
-    grid-template-areas: ;
-    grid-template-rows: 300px 300px 300px;
-    grid-template-columns: 1fr 1fr 1fr;
+@media only screen and (max-width: 600px) {
+    .header {
+        float: none;
+        display: flex;
+        text-align: left;
+        width: 100%;
+        flex-direction: column;
+    }  
+  #heroGrid {
+    grid-template-areas: "hero1";
+    grid-template-rows: 1 fr 1fr;
+    grid-template-columns: 1fr;
   }
