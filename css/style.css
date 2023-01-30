@@ -72,7 +72,7 @@ footer li {
   padding: 25px;
 }
 
-/* My Work Section */
+/* Portfolio */
 .myWork {
   padding: 60px 30px;
   padding-top: 0;
@@ -86,6 +86,7 @@ footer li {
   "img1 content1"
   "img2 content2"
   "img3 content3"
+  "img4 content4"
   ;
 }
 .workGrid img {
@@ -103,7 +104,10 @@ footer li {
 .img3 {
   grid-area: img3;
 }
-.img1, .img2, .img3, .content1, .content2, .content3 {
+.img4 {
+    grid-area: img4;
+  }
+.img1, .img2, .img3, .img4, .content1, .content2, .content3, .content4 {
   padding: 80px;
 }
 .content1 {
@@ -115,3 +119,18 @@ footer li {
 .content3 {
   grid-area: content3;
 }
+.content4 {
+    grid-area: content4;
+  }
+
+@media (max-width: 600px) {
+    display: flex;
+    flex-direction: column ;
+    width: 100%;
+    }
+
+  #categoryGrid {
+    grid-template-areas: ;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
