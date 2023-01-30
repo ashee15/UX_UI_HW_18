@@ -128,7 +128,6 @@ footer li {
     flex-direction: column ;
     width: 100%;
     }
-
   #categoryGrid {
     grid-template-areas: ;
     grid-template-rows: 300px 300px 300px;
